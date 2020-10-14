@@ -1,0 +1,36 @@
+
+Gurobi 8.1.0 (mac64, Python) logging started Wed Oct 14 12:30:12 2020
+
+Academic license - for non-commercial use only
+Optimize a model with 400231 rows, 1877512 columns and 3115918 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [4e-05, 5e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 3e+05]
+
+Concurrent LP optimizer: dual simplex and barrier
+Showing barrier log only...
+
+Presolve removed 400231 rows and 1877512 columns (presolve time = 5s) ...
+Presolve removed 400231 rows and 1877512 columns
+Presolve time: 7.60s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   0.000000e+00   0.000000e+00     10s
+
+Solved with barrier
+Solved in 0 iterations and 9.56 seconds
+Optimal objective  0.000000000e+00
+Optimize a model with 811764 rows, 1877512 columns and 6243138 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [4e-05, 5e+02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 3e+05]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.153975e+07   0.000000e+00      2s
+   10247    2.2353012e+04   0.000000e+00   0.000000e+00      4s
+
+Solved in 10247 iterations and 3.97 seconds
+Optimal objective  2.235301198e+04
