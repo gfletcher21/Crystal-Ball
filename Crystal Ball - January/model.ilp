@@ -1,0 +1,268 @@
+\ Model AlumaJan_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ R3312: y[4004,Atlanta_F&S,2018-01-07] = 219212
+ R3313: y[4004,Baltimore_F&S,2018-01-07] = 13128
+ R3315: y[4004,Great_Lakes_CC,2018-01-07] = 882
+ R3316: y[4004,Houston_F&S,2018-01-07] = 88134
+ R3317: y[4004,Sacramento_Main,2018-01-07] = 9239
+ R3318: y[4004,Seattle_F&S,2018-01-07] = 79595
+ R3319: y[4004,Tampa_F&S,2018-01-07] = 315894
+ R3320: y[4004,Vancouver_F&S,2018-01-07] = 76
+ R150293: x[4004,Atlanta_F&S,Atlanta_F&S,2018-01-07] = 0
+ R150308: x[4004,Baltimore_F&S,Baltimore_F&S,2018-01-07] = 0
+ R150323: x[4004,Edmonton_F&S,Edmonton_F&S,2018-01-07] = 0
+ R150337: x[4004,Fontana,Fontana,2018-01-14] = 0
+ R150338: y[4004,Fontana,2018-01-14] >= 68868
+ R150346: - x[4004,Atlanta_F&S,Fontana,2018-01-07]
+   - x[4004,Baltimore_F&S,Fontana,2018-01-07]
+   - x[4004,Edmonton_F&S,Fontana,2018-01-07]
+   + x[4004,Fontana,Atlanta_F&S,2018-01-14]
+   + x[4004,Fontana,Baltimore_F&S,2018-01-14]
+   + x[4004,Fontana,Edmonton_F&S,2018-01-14]
+   - x[4004,Fontana,Fontana,2018-01-07]
+   + x[4004,Fontana,Fontana,2018-01-14]
+   + x[4004,Fontana,Great_Lakes_CC,2018-01-14]
+   + x[4004,Fontana,Houston_F&S,2018-01-14]
+   + x[4004,Fontana,Linden,2018-01-14]
+   + x[4004,Fontana,Montreal_F&S,2018-01-14]
+   + x[4004,Fontana,Sacramento_Main,2018-01-14]
+   + x[4004,Fontana,Seattle_F&S,2018-01-14]
+   + x[4004,Fontana,Tampa_F&S,2018-01-14]
+   + x[4004,Fontana,Toronto_F&S,2018-01-14]
+   + x[4004,Fontana,Vancouver_F&S,2018-01-14]
+   - x[4004,Great_Lakes_CC,Fontana,2018-01-07]
+   - x[4004,Houston_F&S,Fontana,2018-01-07]
+   - x[4004,Linden,Fontana,2018-01-07]
+   - x[4004,Montreal_F&S,Fontana,2018-01-07]
+   - x[4004,Sacramento_Main,Fontana,2018-01-07]
+   - x[4004,Seattle_F&S,Fontana,2018-01-07]
+   - x[4004,Tampa_F&S,Fontana,2018-01-07]
+   - x[4004,Toronto_F&S,Fontana,2018-01-07]
+   - x[4004,Vancouver_F&S,Fontana,2018-01-07] - y[4004,Fontana,2018-01-07]
+   + y[4004,Fontana,2018-01-14] = 0
+ R150349: x[4004,Great_Lakes_CC,Great_Lakes_CC,2018-01-07] = 0
+ R150360: x[4004,Houston_F&S,Houston_F&S,2018-01-07] = 0
+ R150375: x[4004,Linden,Linden,2018-01-07] = 0
+ R150386: x[4004,Montreal_F&S,Montreal_F&S,2018-01-07] = 0
+ R150397: x[4004,Sacramento_Main,Sacramento_Main,2018-01-07] = 0
+ R150412: x[4004,Seattle_F&S,Seattle_F&S,2018-01-07] = 0
+ R150427: x[4004,Tampa_F&S,Tampa_F&S,2018-01-07] = 0
+ R150442: x[4004,Toronto_F&S,Toronto_F&S,2018-01-07] = 0
+ R150453: x[4004,Vancouver_F&S,Vancouver_F&S,2018-01-07] = 0
+ R415200: x[4004,Atlanta_F&S,Atlanta_F&S,2018-01-07]
+   + x[4004,Atlanta_F&S,Baltimore_F&S,2018-01-07]
+   + x[4004,Atlanta_F&S,Edmonton_F&S,2018-01-07]
+   + x[4004,Atlanta_F&S,Fontana,2018-01-07]
+   + x[4004,Atlanta_F&S,Great_Lakes_CC,2018-01-07]
+   + x[4004,Atlanta_F&S,Houston_F&S,2018-01-07]
+   + x[4004,Atlanta_F&S,Linden,2018-01-07]
+   + x[4004,Atlanta_F&S,Montreal_F&S,2018-01-07]
+   + x[4004,Atlanta_F&S,Sacramento_Main,2018-01-07]
+   + x[4004,Atlanta_F&S,Seattle_F&S,2018-01-07]
+   + x[4004,Atlanta_F&S,Tampa_F&S,2018-01-07]
+   + x[4004,Atlanta_F&S,Toronto_F&S,2018-01-07]
+   + x[4004,Atlanta_F&S,Vancouver_F&S,2018-01-07]
+   + x[4004,Baltimore_F&S,Atlanta_F&S,2018-01-07]
+   + x[4004,Baltimore_F&S,Baltimore_F&S,2018-01-07]
+   + x[4004,Baltimore_F&S,Edmonton_F&S,2018-01-07]
+   + x[4004,Baltimore_F&S,Fontana,2018-01-07]
+   + x[4004,Baltimore_F&S,Great_Lakes_CC,2018-01-07]
+   + x[4004,Baltimore_F&S,Houston_F&S,2018-01-07]
+   + x[4004,Baltimore_F&S,Linden,2018-01-07]
+   + x[4004,Baltimore_F&S,Montreal_F&S,2018-01-07]
+   + x[4004,Baltimore_F&S,Sacramento_Main,2018-01-07]
+   + x[4004,Baltimore_F&S,Seattle_F&S,2018-01-07]
+   + x[4004,Baltimore_F&S,Tampa_F&S,2018-01-07]
+   + x[4004,Baltimore_F&S,Toronto_F&S,2018-01-07]
+   + x[4004,Baltimore_F&S,Vancouver_F&S,2018-01-07]
+   + x[4004,Edmonton_F&S,Atlanta_F&S,2018-01-07]
+   + x[4004,Edmonton_F&S,Baltimore_F&S,2018-01-07]
+   + x[4004,Edmonton_F&S,Edmonton_F&S,2018-01-07]
+   + x[4004,Edmonton_F&S,Fontana,2018-01-07]
+   + x[4004,Edmonton_F&S,Great_Lakes_CC,2018-01-07]
+   + x[4004,Edmonton_F&S,Houston_F&S,2018-01-07]
+   + x[4004,Edmonton_F&S,Linden,2018-01-07]
+   + x[4004,Edmonton_F&S,Montreal_F&S,2018-01-07]
+   + x[4004,Edmonton_F&S,Sacramento_Main,2018-01-07]
+   + x[4004,Edmonton_F&S,Seattle_F&S,2018-01-07]
+   + x[4004,Edmonton_F&S,Tampa_F&S,2018-01-07]
+   + x[4004,Edmonton_F&S,Toronto_F&S,2018-01-07]
+   + x[4004,Edmonton_F&S,Vancouver_F&S,2018-01-07]
+   + x[4004,Fontana,Atlanta_F&S,2018-01-07]
+   + x[4004,Fontana,Baltimore_F&S,2018-01-07]
+   + x[4004,Fontana,Edmonton_F&S,2018-01-07]
+   + x[4004,Fontana,Fontana,2018-01-07]
+   + x[4004,Fontana,Great_Lakes_CC,2018-01-07]
+   + x[4004,Fontana,Houston_F&S,2018-01-07]
+   + x[4004,Fontana,Linden,2018-01-07]
+   + x[4004,Fontana,Montreal_F&S,2018-01-07]
+   + x[4004,Fontana,Sacramento_Main,2018-01-07]
+   + x[4004,Fontana,Seattle_F&S,2018-01-07]
+   + x[4004,Fontana,Tampa_F&S,2018-01-07]
+   + x[4004,Fontana,Toronto_F&S,2018-01-07]
+   + x[4004,Fontana,Vancouver_F&S,2018-01-07]
+   + x[4004,Great_Lakes_CC,Atlanta_F&S,2018-01-07]
+   + x[4004,Great_Lakes_CC,Baltimore_F&S,2018-01-07]
+   + x[4004,Great_Lakes_CC,Edmonton_F&S,2018-01-07]
+   + x[4004,Great_Lakes_CC,Fontana,2018-01-07]
+   + x[4004,Great_Lakes_CC,Great_Lakes_CC,2018-01-07]
+   + x[4004,Great_Lakes_CC,Houston_F&S,2018-01-07]
+   + x[4004,Great_Lakes_CC,Linden,2018-01-07]
+   + x[4004,Great_Lakes_CC,Montreal_F&S,2018-01-07]
+   + x[4004,Great_Lakes_CC,Sacramento_Main,2018-01-07]
+   + x[4004,Great_Lakes_CC,Seattle_F&S,2018-01-07]
+   + x[4004,Great_Lakes_CC,Tampa_F&S,2018-01-07]
+   + x[4004,Great_Lakes_CC,Toronto_F&S,2018-01-07]
+   + x[4004,Great_Lakes_CC,Vancouver_F&S,2018-01-07]
+   + x[4004,Houston_F&S,Atlanta_F&S,2018-01-07]
+   + x[4004,Houston_F&S,Baltimore_F&S,2018-01-07]
+   + x[4004,Houston_F&S,Edmonton_F&S,2018-01-07]
+   + x[4004,Houston_F&S,Fontana,2018-01-07]
+   + x[4004,Houston_F&S,Great_Lakes_CC,2018-01-07]
+   + x[4004,Houston_F&S,Houston_F&S,2018-01-07]
+   + x[4004,Houston_F&S,Linden,2018-01-07]
+   + x[4004,Houston_F&S,Montreal_F&S,2018-01-07]
+   + x[4004,Houston_F&S,Sacramento_Main,2018-01-07]
+   + x[4004,Houston_F&S,Seattle_F&S,2018-01-07]
+   + x[4004,Houston_F&S,Tampa_F&S,2018-01-07]
+   + x[4004,Houston_F&S,Toronto_F&S,2018-01-07]
+   + x[4004,Houston_F&S,Vancouver_F&S,2018-01-07]
+   + x[4004,Linden,Atlanta_F&S,2018-01-07]
+   + x[4004,Linden,Baltimore_F&S,2018-01-07]
+   + x[4004,Linden,Edmonton_F&S,2018-01-07]
+   + x[4004,Linden,Fontana,2018-01-07]
+   + x[4004,Linden,Great_Lakes_CC,2018-01-07]
+   + x[4004,Linden,Houston_F&S,2018-01-07]
+   + x[4004,Linden,Linden,2018-01-07]
+   + x[4004,Linden,Montreal_F&S,2018-01-07]
+   + x[4004,Linden,Sacramento_Main,2018-01-07]
+   + x[4004,Linden,Seattle_F&S,2018-01-07]
+   + x[4004,Linden,Tampa_F&S,2018-01-07]
+   + x[4004,Linden,Toronto_F&S,2018-01-07]
+   + x[4004,Linden,Vancouver_F&S,2018-01-07]
+   + x[4004,Montreal_F&S,Atlanta_F&S,2018-01-07]
+   + x[4004,Montreal_F&S,Baltimore_F&S,2018-01-07]
+   + x[4004,Montreal_F&S,Edmonton_F&S,2018-01-07]
+   + x[4004,Montreal_F&S,Fontana,2018-01-07]
+   + x[4004,Montreal_F&S,Great_Lakes_CC,2018-01-07]
+   + x[4004,Montreal_F&S,Houston_F&S,2018-01-07]
+   + x[4004,Montreal_F&S,Linden,2018-01-07]
+   + x[4004,Montreal_F&S,Montreal_F&S,2018-01-07]
+   + x[4004,Montreal_F&S,Sacramento_Main,2018-01-07]
+   + x[4004,Montreal_F&S,Seattle_F&S,2018-01-07]
+   + x[4004,Montreal_F&S,Tampa_F&S,2018-01-07]
+   + x[4004,Montreal_F&S,Toronto_F&S,2018-01-07]
+   + x[4004,Montreal_F&S,Vancouver_F&S,2018-01-07]
+   + x[4004,Sacramento_Main,Atlanta_F&S,2018-01-07]
+   + x[4004,Sacramento_Main,Baltimore_F&S,2018-01-07]
+   + x[4004,Sacramento_Main,Edmonton_F&S,2018-01-07]
+   + x[4004,Sacramento_Main,Fontana,2018-01-07]
+   + x[4004,Sacramento_Main,Great_Lakes_CC,2018-01-07]
+   + x[4004,Sacramento_Main,Houston_F&S,2018-01-07]
+   + x[4004,Sacramento_Main,Linden,2018-01-07]
+   + x[4004,Sacramento_Main,Montreal_F&S,2018-01-07]
+   + x[4004,Sacramento_Main,Sacramento_Main,2018-01-07]
+   + x[4004,Sacramento_Main,Seattle_F&S,2018-01-07]
+   + x[4004,Sacramento_Main,Tampa_F&S,2018-01-07]
+   + x[4004,Sacramento_Main,Toronto_F&S,2018-01-07]
+   + x[4004,Sacramento_Main,Vancouver_F&S,2018-01-07]
+   + x[4004,Seattle_F&S,Atlanta_F&S,2018-01-07]
+   + x[4004,Seattle_F&S,Baltimore_F&S,2018-01-07]
+   + x[4004,Seattle_F&S,Edmonton_F&S,2018-01-07]
+   + x[4004,Seattle_F&S,Fontana,2018-01-07]
+   + x[4004,Seattle_F&S,Great_Lakes_CC,2018-01-07]
+   + x[4004,Seattle_F&S,Houston_F&S,2018-01-07]
+   + x[4004,Seattle_F&S,Linden,2018-01-07]
+   + x[4004,Seattle_F&S,Montreal_F&S,2018-01-07]
+   + x[4004,Seattle_F&S,Sacramento_Main,2018-01-07]
+   + x[4004,Seattle_F&S,Seattle_F&S,2018-01-07]
+   + x[4004,Seattle_F&S,Tampa_F&S,2018-01-07]
+   + x[4004,Seattle_F&S,Toronto_F&S,2018-01-07]
+   + x[4004,Seattle_F&S,Vancouver_F&S,2018-01-07]
+   + x[4004,Tampa_F&S,Atlanta_F&S,2018-01-07]
+   + x[4004,Tampa_F&S,Baltimore_F&S,2018-01-07]
+   + x[4004,Tampa_F&S,Edmonton_F&S,2018-01-07]
+   + x[4004,Tampa_F&S,Fontana,2018-01-07]
+   + x[4004,Tampa_F&S,Great_Lakes_CC,2018-01-07]
+   + x[4004,Tampa_F&S,Houston_F&S,2018-01-07]
+   + x[4004,Tampa_F&S,Linden,2018-01-07]
+   + x[4004,Tampa_F&S,Montreal_F&S,2018-01-07]
+   + x[4004,Tampa_F&S,Sacramento_Main,2018-01-07]
+   + x[4004,Tampa_F&S,Seattle_F&S,2018-01-07]
+   + x[4004,Tampa_F&S,Tampa_F&S,2018-01-07]
+   + x[4004,Tampa_F&S,Toronto_F&S,2018-01-07]
+   + x[4004,Tampa_F&S,Vancouver_F&S,2018-01-07]
+   + x[4004,Toronto_F&S,Atlanta_F&S,2018-01-07]
+   + x[4004,Toronto_F&S,Baltimore_F&S,2018-01-07]
+   + x[4004,Toronto_F&S,Edmonton_F&S,2018-01-07]
+   + x[4004,Toronto_F&S,Fontana,2018-01-07]
+   + x[4004,Toronto_F&S,Great_Lakes_CC,2018-01-07]
+   + x[4004,Toronto_F&S,Houston_F&S,2018-01-07]
+   + x[4004,Toronto_F&S,Linden,2018-01-07]
+   + x[4004,Toronto_F&S,Montreal_F&S,2018-01-07]
+   + x[4004,Toronto_F&S,Sacramento_Main,2018-01-07]
+   + x[4004,Toronto_F&S,Seattle_F&S,2018-01-07]
+   + x[4004,Toronto_F&S,Tampa_F&S,2018-01-07]
+   + x[4004,Toronto_F&S,Toronto_F&S,2018-01-07]
+   + x[4004,Toronto_F&S,Vancouver_F&S,2018-01-07]
+   + x[4004,Vancouver_F&S,Atlanta_F&S,2018-01-07]
+   + x[4004,Vancouver_F&S,Baltimore_F&S,2018-01-07]
+   + x[4004,Vancouver_F&S,Edmonton_F&S,2018-01-07]
+   + x[4004,Vancouver_F&S,Fontana,2018-01-07]
+   + x[4004,Vancouver_F&S,Great_Lakes_CC,2018-01-07]
+   + x[4004,Vancouver_F&S,Houston_F&S,2018-01-07]
+   + x[4004,Vancouver_F&S,Linden,2018-01-07]
+   + x[4004,Vancouver_F&S,Montreal_F&S,2018-01-07]
+   + x[4004,Vancouver_F&S,Sacramento_Main,2018-01-07]
+   + x[4004,Vancouver_F&S,Seattle_F&S,2018-01-07]
+   + x[4004,Vancouver_F&S,Tampa_F&S,2018-01-07]
+   + x[4004,Vancouver_F&S,Toronto_F&S,2018-01-07]
+   + x[4004,Vancouver_F&S,Vancouver_F&S,2018-01-07]
+   + y[4004,Atlanta_F&S,2018-01-07] + y[4004,Baltimore_F&S,2018-01-07]
+   + y[4004,Edmonton_F&S,2018-01-07] + y[4004,Fontana,2018-01-07]
+   + y[4004,Great_Lakes_CC,2018-01-07] + y[4004,Houston_F&S,2018-01-07]
+   + y[4004,Linden,2018-01-07] + y[4004,Montreal_F&S,2018-01-07]
+   + y[4004,Sacramento_Main,2018-01-07] + y[4004,Seattle_F&S,2018-01-07]
+   + y[4004,Tampa_F&S,2018-01-07] + y[4004,Toronto_F&S,2018-01-07]
+   + y[4004,Vancouver_F&S,2018-01-07] <= 787225
+Bounds
+ x[4004,Atlanta_F&S,Atlanta_F&S,2018-01-07] free
+ x[4004,Atlanta_F&S,Fontana,2018-01-07] free
+ x[4004,Baltimore_F&S,Baltimore_F&S,2018-01-07] free
+ x[4004,Baltimore_F&S,Fontana,2018-01-07] free
+ x[4004,Edmonton_F&S,Edmonton_F&S,2018-01-07] free
+ x[4004,Edmonton_F&S,Fontana,2018-01-07] free
+ x[4004,Fontana,Fontana,2018-01-07] free
+ x[4004,Fontana,Fontana,2018-01-14] free
+ x[4004,Great_Lakes_CC,Fontana,2018-01-07] free
+ x[4004,Great_Lakes_CC,Great_Lakes_CC,2018-01-07] free
+ x[4004,Houston_F&S,Fontana,2018-01-07] free
+ x[4004,Houston_F&S,Houston_F&S,2018-01-07] free
+ x[4004,Linden,Fontana,2018-01-07] free
+ x[4004,Linden,Linden,2018-01-07] free
+ x[4004,Montreal_F&S,Fontana,2018-01-07] free
+ x[4004,Montreal_F&S,Montreal_F&S,2018-01-07] free
+ x[4004,Sacramento_Main,Fontana,2018-01-07] free
+ x[4004,Sacramento_Main,Sacramento_Main,2018-01-07] free
+ x[4004,Seattle_F&S,Fontana,2018-01-07] free
+ x[4004,Seattle_F&S,Seattle_F&S,2018-01-07] free
+ x[4004,Tampa_F&S,Fontana,2018-01-07] free
+ x[4004,Tampa_F&S,Tampa_F&S,2018-01-07] free
+ x[4004,Toronto_F&S,Fontana,2018-01-07] free
+ x[4004,Toronto_F&S,Toronto_F&S,2018-01-07] free
+ x[4004,Vancouver_F&S,Fontana,2018-01-07] free
+ x[4004,Vancouver_F&S,Vancouver_F&S,2018-01-07] free
+ y[4004,Atlanta_F&S,2018-01-07] free
+ y[4004,Baltimore_F&S,2018-01-07] free
+ y[4004,Fontana,2018-01-07] free
+ y[4004,Fontana,2018-01-14] free
+ y[4004,Great_Lakes_CC,2018-01-07] free
+ y[4004,Houston_F&S,2018-01-07] free
+ y[4004,Sacramento_Main,2018-01-07] free
+ y[4004,Seattle_F&S,2018-01-07] free
+ y[4004,Tampa_F&S,2018-01-07] free
+ y[4004,Vancouver_F&S,2018-01-07] free
+End
